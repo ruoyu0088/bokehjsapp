@@ -1,0 +1,13 @@
+diff --git a/node_modules/ml-conrec/src/ShapeContourDrawer.js b/node_modules/ml-conrec/src/ShapeContourDrawer.js
+index 67050c5..e11e02b 100644
+--- a/node_modules/ml-conrec/src/ShapeContourDrawer.js
++++ b/node_modules/ml-conrec/src/ShapeContourDrawer.js
+@@ -100,7 +100,7 @@ export class ShapeContourDrawer {
+           l2.push(h.p);
+           h = h.next;
+         }
+-        l.push(l2);
++        l.push({level:level, xy:l2});
+         s = s.next;
+       }
+     }
